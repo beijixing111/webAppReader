@@ -330,7 +330,8 @@
 			        font_container : $('.font-container'),
 			        font_def : $('.icon-font-def'),
 			        bg_set : $('.bk-container'),
-			        blank_set : $('.icon-blank')
+			        blank_set : $('.icon-blank'),
+				back : $('.icon-back')
 			    };
 			    var Win = $(window);
 			    var Doc = $(document);
@@ -601,6 +602,9 @@
 			                readerUI(data);
 			            });
 			        })
+				Dom.back.click(function(){
+			        	location.href="./";
+			        });    
 			    }
 			    
 			    main();
